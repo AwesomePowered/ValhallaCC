@@ -24,9 +24,8 @@ public class ValhallaCS extends JavaPlugin {
             } else {
                 if (args.length >= 1) {
                     StringBuilder sb = new StringBuilder();
-                    for(int i = 0; i < args.length; i++)
-                    {
-                        sb.append(' ').append(args[i]);
+                    for (String s : args) {
+                        sb.append(' ').append(s);
                     }
                     String theCommand = sb.toString().trim();
                     sendBungeeCommand(theCommand);

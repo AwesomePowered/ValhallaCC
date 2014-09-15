@@ -23,7 +23,7 @@ public class ValhallaCC extends Plugin implements Listener {
         if (ev.getSender() instanceof Server) {
             if (ev.getTag().equalsIgnoreCase("ValhallaCC")) {
                 String messageStuff = new String(ev.getData(), Charsets.UTF_8);
-                System.out.println(prefix + "Recieved command " + messageStuff + " from " + ev.getSender());
+                System.out.println(prefix + "Received command " + messageStuff + " from " + ev.getSender());
                 getProxy().getPluginManager().dispatchCommand(getProxy().getConsole(), messageStuff);
             }
         }
