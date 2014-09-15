@@ -1,0 +1,6 @@
+name: ValhallaCS
+main: net.awesomepowered.valhallacc.ValhallaCS
+version: 0.1
+author: LaxWasHere
+commands:
+    valhalla:
