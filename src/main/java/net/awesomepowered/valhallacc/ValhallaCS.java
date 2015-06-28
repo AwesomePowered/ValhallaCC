@@ -1,7 +1,6 @@
 package net.awesomepowered.valhallacc;
 
 import com.google.common.base.Charsets;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -19,7 +18,7 @@ public class ValhallaCS extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         if (s.equalsIgnoreCase("valhalla") && sender.hasPermission("valhalla.admin")) {
-            if (Bukkit.getServer().getOnlinePlayers().size() == 0) {
+            if (getServer().getOnlinePlayers().size() == 0) {
                 sender.sendMessage(ChatColor.RED + prefix + "Need at least one player online");
             } else {
                 if (args.length >= 1) {
